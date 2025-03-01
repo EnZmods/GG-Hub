@@ -1,38 +1,11 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/jensonhirst/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
-local MainTab = Window:MakeTab({
-	Name = "Scripts",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
+local Window = OrionLib:MakeWindow({Name = "GG Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
-	Name = "Games Scripts",
+	Name = "Scripts and more",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
-})
-
-OrionLib:MakeNotification({
-	Name = "Welcome",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
-Tab:AddButton({
-	Name = "inf money South Side chicago",
-	Callback = function()
-local args = {
-[1] = "Jewellery",
-[2] = "",
-[3] = -850000000
-}
-
-game:GetService("ReplicatedStorage").Remotes.Purchase:FireServer(unpack(args))
-      		print("button pressed")
-  	end    
 })
 
 Tab:AddButton({
@@ -43,7 +16,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcilliseP
   	end    
 })
 
-MainTab:AddButton({
+Tab:AddButton({
 	Name = "Ace Camlock",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ace"))()
@@ -51,7 +24,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Totocoems/Ace/main/Ac
   	end    
 })
 
-MainTab:AddButton({
+Tab:AddButton({
 	Name = "OP",
 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/EnZmods/Gamer-HACKS/refs/heads/main/Gamer%20Hub"))()
